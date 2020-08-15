@@ -1,0 +1,6 @@
+[submodule "k8s-vagrant-multi-node"]
+	path = k8s-vagrant-multi-node
+	url = https://github.com/galexrt/k8s-vagrant-multi-node.git
+[submodule "kadalu"]
+	path = kadalu
+	url = https://github.com/kadalu/kadalu.git
