@@ -1,6 +1,6 @@
 # https://github.com/jonashackt/vagrant-travisci-libvrt
 language: python3
-dist: focal  
+dist: bionic
 # Cache the big Vagrant boxes
 cache:
   directories:
