@@ -12,10 +12,10 @@ install:
 - sudo wget -nv https://releases.hashicorp.com/vagrant/2.2.9/vagrant_2.2.9_x86_64.deb
 - sudo dpkg -i vagrant_2.2.9_x86_64.deb
 # Vagrant correctly installed?
-- vagrant --version
+- sudo vagrant --version
 # Install vagrant-libvirt Vagrant plugin
 - sudo vagrant plugin install vagrant-libvirt
 script:
 - cd k8s-vagrant-multi-node
-- NODE_COUNT=5 BOX_OS=ubuntu VAGRANT_DEFAULT_PROVIDER=libvirt make up -j6
-- vagrant global-status
+- NODE_COUNT=5 BOX_OS=ubuntu VAGRANT_DEFAULT_PROVIDER=libvirt sudo make up -j6
+- sudo vagrant global-status
